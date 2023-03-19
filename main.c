@@ -59,17 +59,6 @@ int	*parse_params(char *str, int size)
 	return params;
 }
 
-void	print_array(int *arr, int size)
-{
-	int i;
-
-	i = 0;
-	while (i < size)
-	{
-		printf("%i, ", arr[i++]);
-	}
-}
-
 int 	*generate_matrix(int size)
 {
 	int limit;
@@ -213,16 +202,6 @@ int *copy_row(int *matrix, int size, int y)
 	return row;
 }
 
-int *copy_arr(int *arr, int size)
-{
-	int *cpy;
-
-	cpy = malloc(4 * size);
-	while (size--)
-		cpy[size] = arr[size];
-	return (cpy);
-}
-
 void reverse_arr(int *arr, int size)
 {
 	int i;
@@ -259,16 +238,6 @@ int	count_view(int *arr, int size)
 		i++;
 	}
 	return count;
-}
-
-int	*generate_filled_array(int size, int value)
-{
-	int *result;
-
-	result = malloc(4 * size);
-	while (size--)
-		result[size] = value;
-	return result;
 }
 
 int 	validate_view_clue(int *arr, int size, int clue)
