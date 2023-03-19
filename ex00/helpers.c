@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int *get_empty_position(int *matrix, int size)
+int	*get_empty_position(int *matrix, int size)
 {
 	int	x;
 	int	y;
@@ -17,20 +17,20 @@ int *get_empty_position(int *matrix, int size)
 			{
 				result[0] = x;
 				result[1] = y;
-				return result;
+				return (result);
 			}
 			x++;
 		}
 		y++;
 	}
 	result[0] = -1;
-	return result;
+	return (result);
 }
 
-int *copy_column(int *matrix, int size, int x)
+int	*copy_column(int *matrix, int size, int x)
 {
-	int *column;
-	int y;
+	int	*column;
+	int	y;
 
 	column = malloc(size * 4);
 	y = 0;
@@ -39,13 +39,13 @@ int *copy_column(int *matrix, int size, int x)
 		column[y] = matrix[y * size + x];
 		y++;
 	}
-	return column;
+	return (column);
 }
 
-int *copy_row(int *matrix, int size, int y)
+int	*copy_row(int *matrix, int size, int y)
 {
-	int *row;
-	int x;
+	int	*row;
+	int	x;
 
 	row = malloc(size * 4);
 	x = 0;
@@ -54,16 +54,16 @@ int *copy_row(int *matrix, int size, int y)
 		row[x] = matrix[y * size + x];
 		x++;
 	}
-	return row;
+	return (row);
 }
 
 
 
-void reverse_arr(int *arr, int size)
+void	reverse_arr(int *arr, int size)
 {
-	int i;
-	int limit;
-	int tmp;
+	int	i;
+	int	limit;
+	int	tmp;
 
 	i = 0;
 	limit = size / 2;
@@ -79,9 +79,9 @@ void reverse_arr(int *arr, int size)
 
 int	count_view(int *arr, int size)
 {
-	int max;
-	int count;
-	int i;
+	int	max;
+	int	count;
+	int	i;
 
 	i = 0;
 	max = 0;
@@ -95,7 +95,5 @@ int	count_view(int *arr, int size)
 		}
 		i++;
 	}
-	return count;
+	return (count);
 }
-
-

@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include "head.h"
 
-int 	*generate_matrix(int size)
+int	*generate_matrix(int size)
 {
-	int limit;
-	int *matrix;
+	int	limit;
+	int	*matrix;
 
 	limit = size * size;
 	matrix = malloc(4 * limit);
@@ -24,7 +24,7 @@ void	fill_matrix(int *matrix, int size, int value)
 
 int	*copy_matrix(int *matrix, int size)
 {
-	int *cpy;
+	int	*cpy;
 
 	cpy = generate_matrix(size);
 	size = size * size;
@@ -32,13 +32,13 @@ int	*copy_matrix(int *matrix, int size)
 	{
 		cpy[size] = matrix[size];
 	}
-	return cpy;
+	return (cpy);
 }
 
 void	print_matrix(int *matrix, int size)
 {
-	int i;
-	int width;
+	int	i;
+	int	width;
 
 	i = 0;
 	width = size;
@@ -52,5 +52,3 @@ void	print_matrix(int *matrix, int size)
 		i++;
 	}
 }
-
-

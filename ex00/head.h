@@ -1,13 +1,13 @@
 #ifndef HEAD
 #define HEAD
 
-void    put_error();
-void    ft_putchar(char c);
-int     validate_params(char *str, int size);
-int     *parse_params(char *str, int size);
-int     *generate_matrix(int size);
-void    fill_matrix(int *matrix, int size, int value);
-int     *copy_matrix(int *matrix, int size);
+void	put_error();
+void	ft_putchar(char c);
+int	validate_params(char *str, int size);
+int	*parse_params(char *str, int size);
+int	*generate_matrix(int size);
+void	fill_matrix(int *matrix, int size, int value);
+int	*copy_matrix(int *matrix, int size);
 void	print_matrix(int *matrix, int size);
 int	*get_empty_position(int *matrix, int size);
 int	validate_row(int *matrix, int size, int *data);
@@ -25,10 +25,10 @@ int	validate_placement(int *matrix, int size, int *clues, int *data);
 int	recursive_solve(int *matrix, int size, int *clues);
 void	prefill_top(int *matrix, int size, int *clues);
 void	prefill_bottom(int *matrix, int size, int *clues);
-void    prefill_left(int *matrix, int size, int *clues);
-void    prefill_right(int *matrix, int size, int *clues);
-void    prefill(int *matrix, int size, int *clues);
-void    solve(int *matrix, int size, int *clues);
+void	prefill_left(int *matrix, int size, int *clues);
+void	prefill_right(int *matrix, int size, int *clues);
+void	prefill(int *matrix, int size, int *clues);
+void	solve(int *matrix, int size, int *clues);
 
 
 #endif

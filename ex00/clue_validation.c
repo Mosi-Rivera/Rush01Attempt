@@ -1,7 +1,7 @@
 #include "head.h"
 #include <stdlib.h>
 
-int 	validate_view_clue(int *arr, int size, int clue)
+int	validate_view_clue(int *arr, int size, int clue)
 {
 	return (count_view(arr, size) <= clue);
 }
@@ -48,7 +48,5 @@ int	validate_right_clue(int *matrix, int size, int clue, int *data)
 	reverse_arr(row, size);
 	result = validate_view_clue(row, size, clue);
 	free(row);
-	return result;
+	return (result);
 }
-
-

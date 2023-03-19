@@ -29,9 +29,9 @@ int	validate_params(char *str, int size)
 
 int	*parse_params(char *str, int size)
 {
-	int limit;
-	int *params;
-	int count;
+	int	limit;
+	int	*params;
+	int	count;
 
 	params = malloc(4 * size * 4);
 	limit = size * size;
@@ -45,7 +45,7 @@ int	*parse_params(char *str, int size)
 		}
 		str++;
 	}
-	return params;
+	return (params);
 }
 
 

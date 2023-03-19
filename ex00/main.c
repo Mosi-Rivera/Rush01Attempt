@@ -2,9 +2,10 @@
 
 int	main(int argc, char **argv)
 {
-	int size = 4;
-	int *clues;
-	int *matrix;
+	int	size = 4;
+	int	*clues;
+	int	*matrix;
+
 	if (argc != 2 || !validate_params(argv[1], size))
 	{
 		put_error();

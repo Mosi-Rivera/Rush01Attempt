@@ -10,7 +10,7 @@ int	recursive_solve(int *matrix, int size, int *clues)
 	if (data[0] == -1)
 	{
 		free(data);
-		return 1;
+		return (1);
 	}
 	i = 1;
 	while (i <= size)
@@ -22,7 +22,7 @@ int	recursive_solve(int *matrix, int size, int *clues)
 			if (recursive_solve(matrix, size, clues))
 			{
 				free(data);
-				return 1;
+				return (1);
 			}
 			else
 				matrix[data[1] * size + data[0]] = 0;
@@ -30,7 +30,7 @@ int	recursive_solve(int *matrix, int size, int *clues)
 		i++;
 	}
 	free(data);
-	return 0;
+	return (0);
 }
 
 void	solve(int *matrix, int size, int *clues)
