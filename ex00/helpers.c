@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   helpers.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/19 14:02:51 by mosriver          #+#    #+#             */
+/*   Updated: 2023/03/19 14:12:23 by mosriver         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
 int	*get_empty_position(int *matrix, int size)
@@ -57,8 +69,6 @@ int	*copy_row(int *matrix, int size, int y)
 	return (row);
 }
 
-
-
 void	reverse_arr(int *arr, int size)
 {
 	int	i;
@@ -75,7 +85,6 @@ void	reverse_arr(int *arr, int size)
 		i++;
 	}
 }
-
 
 int	count_view(int *arr, int size)
 {

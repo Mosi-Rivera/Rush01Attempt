@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   clue_validation.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/19 14:01:38 by mosriver          #+#    #+#             */
+/*   Updated: 2023/03/19 14:04:48 by mosriver         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "head.h"
 #include <stdlib.h>
 
@@ -11,8 +23,9 @@ int	validate_top_clue(int *matrix, int size, int clue, int *data)
 {
 	int	*column;
 	int	result;
+
 	column = copy_column(matrix, size, data[0]);
-	result = validate_view_clue(column, size, clue, 0);	
+	result = validate_view_clue(column, size, clue, 0);
 	free(column);
 	return (result);
 }

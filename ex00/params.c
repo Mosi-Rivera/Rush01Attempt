@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   params.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/19 14:02:28 by mosriver          #+#    #+#             */
+/*   Updated: 2023/03/19 14:10:49 by mosriver         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
 int	validate_params(char *str, int size)
@@ -47,5 +59,3 @@ int	*parse_params(char *str, int size)
 	}
 	return (params);
 }
-
-

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   prefill.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/19 14:01:27 by mosriver          #+#    #+#             */
+/*   Updated: 2023/03/19 14:12:52 by mosriver         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "head.h"
 
 void	prefill_top(int *matrix, int size, int *clues)
@@ -111,5 +123,3 @@ void	prefill(int *matrix, int size, int *clues)
 	prefill_left(matrix, size, clues);
 	prefill_right(matrix, size, clues);
 }
-
-

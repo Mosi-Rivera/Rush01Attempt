@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   matrix.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/19 14:01:47 by mosriver          #+#    #+#             */
+/*   Updated: 2023/03/19 14:05:17 by mosriver         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "head.h"
 
@@ -10,7 +22,7 @@ int	*generate_matrix(int size)
 	matrix = malloc(4 * limit);
 	if (matrix == 0)
 		return (0);
-	return matrix;
+	return (matrix);
 }
 
 void	fill_matrix(int *matrix, int size, int value)
