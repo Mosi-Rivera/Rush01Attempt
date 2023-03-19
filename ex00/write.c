@@ -1,13 +1,13 @@
-#include<stdio.h>;
+#include<unistd.h>
 
 void	put_error()
 {
-	printf("Error");
+	write(1, "Error", 5);
 }
 
 void	ft_putchar(char c)
 {
-	printf("%c", c);
+	write(1, &c, 1);
 }
 
 

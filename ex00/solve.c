@@ -12,8 +12,8 @@ int	recursive_solve(int *matrix, int size, int *clues)
 		free(data);
 		return (1);
 	}
-	i = 1;
-	while (i <= size)
+	i = size;
+	while (i > 0)
 	{
 		data[2] = i;
 		if (validate_placement(matrix, size, clues, data))
@@ -27,7 +27,7 @@ int	recursive_solve(int *matrix, int size, int *clues)
 			else
 				matrix[data[1] * size + data[0]] = 0;
 		}
-		i++;
+		i--;
 	}
 	free(data);
 	return (0);

@@ -16,7 +16,7 @@ int	*copy_column(int *matrix, int size, int x);
 int	*copy_row(int *matrix, int size, int y);
 void	reverse_arr(int *arr, int size);
 int	count_view(int *arr, int size);
-int	validate_view_clue(int *arr, int size, int clue);
+int	validate_view_clue(int *arr, int size, int clue, int default_result);
 int	validate_top_clue(int *matrix, int size, int clue, int *data);
 int	validate_bottom_clue(int *matrix, int size, int clue, int *data);
 int	validate_left_clue(int *matrix, int size, int clue, int *data);
@@ -29,6 +29,5 @@ void	prefill_left(int *matrix, int size, int *clues);
 void	prefill_right(int *matrix, int size, int *clues);
 void	prefill(int *matrix, int size, int *clues);
 void	solve(int *matrix, int size, int *clues);
-
 
 #endif
