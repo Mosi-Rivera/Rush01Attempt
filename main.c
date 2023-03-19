@@ -1,3 +1,6 @@
+#include "head.h"
+
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -462,7 +465,7 @@ void	rush(int *matrix, int size, int *clues)
 	free(matrix);
 	free(clues);
 }
-
+*/
 int	main(int argc, char **argv)
 {
 	int size = 4;
@@ -476,6 +479,6 @@ int	main(int argc, char **argv)
 	clues = parse_params(argv[1], size);
 	matrix = generate_matrix(size);
 	fill_matrix(matrix, size, 0);
-	rush(matrix, size, clues);
+	solve(matrix, size, clues);
 	return (0);
 }
