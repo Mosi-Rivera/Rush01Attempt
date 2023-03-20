@@ -6,7 +6,7 @@
 /*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 14:01:38 by mosriver          #+#    #+#             */
-/*   Updated: 2023/03/19 14:04:48 by mosriver         ###   ########.fr       */
+/*   Updated: 2023/03/19 20:12:39 by mosriver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,22 @@
 
 int	validate_view_clue(int *arr, int size, int clue, int default_result)
 {
-	default_result = count_view(arr, size) <= clue;
+	int	*missing_numbers;
+	int	*size_arr;
+	int	i;
+
+	i = 0;
+	size_arr = malloc(4 * (size + 1));
+	size_arr[0] = size;
+	while (i < size)
+	{
+		size_arr[i + 1] = arr[i];
+		i++;
+	}
+	missing_numbers = get_missing_numbers(arr, size);
+	default_result = validate_permutations(
+			size_arr, missing_numbers, clue, size + 1);
+	free(size_arr);
 	return (default_result);
 }
 

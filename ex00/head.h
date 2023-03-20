@@ -6,7 +6,7 @@
 /*   By: mosriver <mosriver@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 14:02:16 by mosriver          #+#    #+#             */
-/*   Updated: 2023/03/19 14:28:29 by mosriver         ###   ########.fr       */
+/*   Updated: 2023/03/19 18:49:23 by mosriver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,7 @@ void	prefill_left(int *matrix, int size, int *clues);
 void	prefill_right(int *matrix, int size, int *clues);
 void	prefill(int *matrix, int size, int *clues);
 void	solve(int *matrix, int size, int *clues);
+int		validate_permutations(int *arr, int *perm, int clue, int k);
+int		*get_missing_numbers(int *row, int size);
 
 #endif
